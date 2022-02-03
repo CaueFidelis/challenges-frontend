@@ -1,0 +1,132 @@
+body{
+  margin: 0px;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1{
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+  font-size: 1.12rem;
+}
+
+main{
+  display: grid;
+  place-content: center;
+  background-color:hsl(217, 54%, 11%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  padding: 20px;
+  box-sizing: border-box;
+  width: 22rem;
+  height: auto;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 5px 5px 30px 10px rgba(0,0,0,0.2);
+}
+
+.content{ 
+  display: grid;
+  gap: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.content h1{
+  margin-top: 320px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.content h1:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.container-image{
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.main-image{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.view{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 312px;
+  height: 312px;
+  position: absolute;
+}
+
+.container-image:hover .view{
+  background-color: hsla(178, 100%, 50%, 0.3);
+  display: flex;
+}
+
+.description{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.cripto{
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  gap: 5px;
+  place-items: center;
+}
+
+.time{
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  gap: 5px;
+  place-items: center;
+}
+
+.author{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+.author img{
+  width: 10%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+.author a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+
+.author a:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
