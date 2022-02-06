@@ -1,0 +1,150 @@
+body{
+  margin: 0px;
+}
+
+h1, h2 , p{
+  margin: 0px;
+  padding: 0px;
+}
+
+main{
+  display: grid;
+  place-content: center;
+  background-color: hsl(233, 47%, 7%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.card{
+  display: grid;
+  background-color: hsl(244, 38%, 16%);
+  grid-template-columns: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content-card{
+  display: grid;
+  gap: 50px;
+  padding: 80px;
+}
+
+.text-card{
+  display: grid;
+  gap: 20px;
+}
+
+.text-card h1, .data-card h2{
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+ h1{
+  font-size: 2rem;
+  font-weight: 700;
+  width: 18ch;
+}
+
+.text-card p{
+  width: 45ch;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.text-card strong{
+  color: hsl(277, 64%, 61%);
+}
+
+.data-card{
+  display: flex;
+  gap: 50px;
+}
+
+.data-card p{
+  margin-top: 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+@media ( min-width: 1126px){
+  .container-card{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .content-card{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .img-main{
+    content: url('./img/image-header-desktop.jpg');
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+@media ( max-width: 1125px){
+  h1{
+    font-size: 1.6rem;
+    width: 15ch;
+  }
+
+  h2{
+    font-size: 1.3rem;
+  }
+
+  .content-card{
+    display: grid;
+    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text-card {
+    justify-items: center;
+  }
+
+  .text-card p{
+    width: 32ch;
+  }
+
+  .data-card{
+    display: grid;
+    gap: 20px;
+  }
+
+  .container-card{
+    display: grid;
+    object-fit: cover;
+    justify-content: center;
+    justify-items: center;
+   }
+ 
+   .img-main{
+     content: url('./img/image-header-mobile.jpg');
+     width: 310px;
+     border-radius: 10px 10px 0px 0px;
+     position: relative;
+   }
+
+   .container-img::after{
+     content: "";
+     background: hsla(277, 64%, 61%, 0.7);
+     top: 110px;
+     width: 310px;
+     height: 229px;
+     border-radius:  10px 10px 0px 0px;
+     position: absolute;
+   }
+}
